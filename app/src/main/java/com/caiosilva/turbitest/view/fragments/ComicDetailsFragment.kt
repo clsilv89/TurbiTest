@@ -14,6 +14,7 @@ import com.caiosilva.turbitest.util.Constants.COMIC_ID
 import com.caiosilva.turbitest.util.view.hideProgress
 import com.caiosilva.turbitest.util.view.loadImageWithUrl
 import com.caiosilva.turbitest.util.view.showProgress
+import com.caiosilva.turbitest.util.view.showSnackbar
 import com.caiosilva.turbitest.view.viewmodel.ComicDetailsViewModel
 import com.caiosilva.turbitest.view.viewstates.ComicDetailsViewState
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -47,11 +48,9 @@ class ComicDetailsFragment : Fragment() {
                     (activity as? MainActivity)?.showProgress()
                 }
 
-                is ComicDetailsViewState.OnError -> Toast.makeText(
-                    requireContext(),
-                    it.error,
-                    Toast.LENGTH_SHORT
-                ).show()
+                is ComicDetailsViewState.OnError -> (activity as? MainActivity)?.showSnackbar(
+                    it.error
+                )
 
                 is ComicDetailsViewState.OnSuccess ->
                     setupViews(it).also { (activity as? MainActivity)?.hideProgress() }

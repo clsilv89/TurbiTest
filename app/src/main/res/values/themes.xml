@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.TurbiTest" parent="Theme.AppCompat.NoActionBar" >
+        <item name="android:background">@color/white</item>
+        <item name="colorAccent">@color/marvel_red</item>
+    </style>
+
+    <style name="Theme.TurbiTest.SimpleText" parent="Theme.TurbiTest">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_margin">@dimen/dimen_8dp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="Theme.TurbiTest.TitleText" parent="Theme.TurbiTest">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_margin">@dimen/dimen_8dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/dimen_24sp</item>
+    </style>
+
+    <style name="Theme.TurbiTest.Splash" parent="Theme.SplashScreen" >
+        <item name="windowSplashScreenBackground">@color/marvel_red</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Theme.AppCompat.NoActionBar</item>
+    </style>
+</resources>

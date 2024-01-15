@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TurbiTest</string>
+
+    <string name="title_text_view">Title: %s</string>
+    <string name="description_text_view">Description: %s</string>
+    <string name="issue_id_text_view">Issue ID: %s</string>
+    <string name="page_count_text_view">Page Count: %s</string>
+    <string name="publication_date_text_view">Publication Date: %s</string>
+    <string name="price_text_view">Price: %s</string>
+    <string name="authors_text_view">Authors: %s</string>
+    <string name="no_description">No description available</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentComicsList">
+
+    <fragment
+        android:id="@+id/fragmentComicsList"
+        android:name="com.caiosilva.turbitest.view.fragments.ComicsListFragment"
+        android:label="FragmentCharactersList">
+        <action
+            android:id="@+id/action_fragmentComicsList_to_comicDetailsFragment"
+            app:destination="@id/comicDetailsFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/fragmentComicsList"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/comicDetailsFragment"
+        android:name="com.caiosilva.turbitest.view.fragments.ComicDetailsFragment"
+        android:label="ComicDetailsFragment" />
+</navigation>

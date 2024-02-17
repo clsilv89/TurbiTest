@@ -29,6 +29,9 @@ class ComicListUseCaseTest {
         assertEquals(success, result)
     }
 
+
+
+
     @Test
     fun `when invoke use case should return error`() = runBlocking {
         val error = ResultWrapper.GenericError(500, error)
